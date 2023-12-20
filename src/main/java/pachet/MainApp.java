@@ -85,7 +85,8 @@ public class MainApp
             ResultSet resultSet = statement.executeQuery(sqlQuery);
 
             // Iterate through the result set and add data to the list
-            while (resultSet.next()) {
+            while (resultSet.next())
+            {
                 int id_persoana = resultSet.getInt("id_persoana");
                 String nume = resultSet.getString("nume");
                 int varsta = resultSet.getInt("varsta");
